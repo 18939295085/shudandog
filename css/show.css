@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #FFDC69;
+}
+.fonts{
+    width:60%;
+    margin: auto;
+}
+.center-photo{
+    width:90%;
+    height: 7.8rem;
+    margin: auto;
+    background: #ffffff;
+    padding: 0.3rem;
+    position: relative;
+}
+.photo-fonts{
+    width:60%;
+    position: absolute;
+    right: 0.4rem;
+    bottom: 0.2rem;
+}
+.bottom-fonts{
+    width:60%;
+    margin: auto;
+    margin-top: 0.4rem;
+    text-align: center;
+}
+.one-font{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+/*阴影效果*/
+.shadow {
+    position: relative;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.3),
+    0px 0px 20px rgba(0,0,0,0.1) inset;
+}
+
+.shadow::before,
+.shadow::after {
+    content:"";
+    position:absolute;
+    z-index:-1;
+}
+
+.shadow::before,
+.shadow::after {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    bottom:15px;
+    left:10px;
+    width:50%;
+    height:20%;
+}
+
+.shadow::before,
+.shadow::after {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    bottom:15px;
+    left:10px;
+    width:50%;
+    height:20%;
+    box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+    transform:rotate(-3deg);
+}
+
+.shadow::after{
+    right:10px;
+    left:auto;
+    transform:rotate(3deg);
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="mobileOptimized" content="width">
+    <meta name="handheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <title>带着书单狗去旅行</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="js/libyys-flexible.js"></script>
+    <script src="js/ajaxfileupload.js"></script>
+    <script language="javascript"
+            src="http://webapi.amap.com/maps?v=1.4.0&key=a650bc17d44fce184652fe8cb687d682"></script>
+    <link rel="stylesheet" href="css/upload.css">
+</head>
+<body>
+<div class="upload">
+    <div>
+        <img style="width: 100%;" src="image/gezi.png" alt="">
+    </div>
+    <div class="logo">
+        <img style="width: 100%;" src="image/upload.png" alt="">
+    </div>
+    <div class="upload-photo shadow">
+        <div class="add-photo">
+            <div class="mars">
+                <div class="file">
+                    选择图片<input id="img_input" type="file" multiple="multiple" name="userfile"/>
+                </div>
+            </div>
+            <div id="preview_box">
+
+            </div>
+            <ul id="drak">
+                <li class="imgLi">
+                    <img src="image/bookdog.png" alt="">
+                    <span></span>
+                </li>
+                <li class="imgLi">
+                    <img src="image/bigrandog.png" alt="">
+                    <span></span>
+                </li>
+                <li class="imgLi">
+                    <img src="image/bigsaodog.png" alt="">
+                    <span></span>
+                </li>
+                <li class="imgLi">
+                    <img src="image/bigsupdog.png" alt="">
+                    <span></span>
+                </li>
+                <li class="imgLi">
+                    <img src="image/bigswidog.png" alt="">
+                    <span></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="dogxx">
+        <ul>
+            <li><img style="width: 82%;" src="image/jddog.png" alt=""></li>
+            <li><img style="width: 62%;" src="image/randog.png" alt=""></li>
+            <li><img style="width: 82%;" src="image/saodog.png" alt=""></li>
+            <li><img style="width: 96%;" src="image/supdog.png" alt=""></li>
+            <li><img style="width: 92%;" src="image/swidog.png" alt=""></li>
+        </ul>
+    </div>
+    <div class="dibuton" onclick="hecheng()">
+        <img src="image/shengcheng.png" alt="">
+    </div>
+    <div class="modal">
+        请选择书单狗再进行合成
+    </div>
+</div>
+<div style="display: none" id="container">
+    <div id="imgBox">
+
+    </div>
+    <div class="con-btn">
+        <a href="show.html"><img src="image/hezhao.png" alt=""></a>
+    </div>
+</div>
+</body>
+<script src="js/main.js"></script>
+</html>
+

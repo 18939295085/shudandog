@@ -1,0 +1,224 @@
+/*******上传页面**************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.fl{
+    float: left;
+}
+.rl{
+    float: right;
+}
+body{
+    background: #FFDC69;
+}
+.upload{
+    width:100%;
+    position: relative;
+}
+/*遮罩层*/
+.modal{
+    width:55%;
+    height: 0.8rem;
+    background-color: rgba(0,0,0,0.6);
+    margin: auto;
+    border-radius:  100px / 75px;
+    color: #ffffff;
+    position: absolute;
+    z-index: 999;
+    line-height: 0.8rem;
+    text-align: center;
+    top:40%;
+    left:23%;
+    display: none;
+}
+.logo{
+    width:90%;
+    margin: auto;
+    margin-top: 0.2rem;
+}
+.upload-photo{
+    width:75%;
+    margin:auto;
+}
+.add-photo{
+    width:100%;
+    height: 6.5rem;
+    background: #ffffff;
+    margin-top: 0.2rem;
+}
+.dogxx{
+    width:100%;
+    height: 1.5rem;
+    background: #EEE0B2;
+    margin-top: 0.1rem;
+    padding: 0.1rem;
+}
+.dogxx ul li{
+    float: left;
+    background: #ffffff;
+    width: 1.2rem;
+    height: 1.3rem;
+    margin-left: 0.2rem;
+}
+.dibuton{
+    width:50%;
+    margin: auto;
+    margin-top: 0.25rem;
+}
+.dibuton img{
+    width:100%;
+}
+/*
+    上传图片
+*/
+.add-photo{
+    padding: 0.2rem;
+}
+.add-photo ul li img{
+    width:50%;
+}
+.imgLi{
+    position: relative;
+}
+.imgLi img{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.imgLi span{
+    position: absolute;
+    top: -3rem;
+    background-image: url("../image/anniu.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+#preview_box{
+    position: relative;
+}
+#preview_box img{
+    width:100%;
+    height: 5rem;
+}
+.active{
+    border:1px solid #ED6F00;
+}
+/*获取图片*/
+#imgBox{
+    width:90%;
+    margin: auto;
+    height: 7rem;
+    background: #ffffff;
+    padding: 0.2rem;
+    position: absolute;
+    top: 2rem;
+    left: 0.4rem;
+    z-index: 999;
+}
+#imgBox img{
+    width:100%;
+    vertical-align: middle;
+}
+/*地图的调用*/
+#container{
+    width:100%;
+    height:13.4rem;
+    position: relative;
+    overflow-y: hidden;
+}
+/*查看照片*/
+.con-btn{
+    position: absolute;
+    bottom: 2.5rem;
+    left:27%;
+    z-index: 999;
+    width:50%;
+}
+.con-btn a img{
+    width:100%;
+}
+/*input样式*/
+.mars{
+    width:34%;
+    margin: auto;
+}
+.file {
+    position: relative;
+    display: inline-block;
+    background: #FFDC69;
+    border: 1px solid #E97104;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #E97104;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+
+/*阴影效果*/
+.shadow {
+    position: relative;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.3),
+    0px 0px 20px rgba(0,0,0,0.1) inset;
+}
+
+.shadow::before,
+.shadow::after {
+    content:"";
+    position:absolute;
+    z-index:-1;
+}
+
+.shadow::before,
+.shadow::after {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    bottom:15px;
+    left:10px;
+    width:50%;
+    height:20%;
+}
+
+.shadow::before,
+.shadow::after {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    bottom:15px;
+    left:10px;
+    width:50%;
+    height:20%;
+    box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+    transform:rotate(-3deg);
+}
+
+.shadow::after{
+    right:10px;
+    left:auto;
+    transform:rotate(3deg);
+}
+/*狗头的大小*/
+.amap-icon img{
+    width:90%;
+}
